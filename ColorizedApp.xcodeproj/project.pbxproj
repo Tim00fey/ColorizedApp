@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		C4485B9129AA130400D78EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4485B9029AA130400D78EE0 /* AppDelegate.swift */; };
 		C4485B9329AA130400D78EE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4485B9229AA130400D78EE0 /* SceneDelegate.swift */; };
-		C4485B9529AA130400D78EE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4485B9429AA130400D78EE0 /* ViewController.swift */; };
+		C4485B9529AA130400D78EE0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4485B9429AA130400D78EE0 /* MainViewController.swift */; };
 		C4485B9829AA130400D78EE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4485B9629AA130400D78EE0 /* Main.storyboard */; };
 		C4485B9A29AA130500D78EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4485B9929AA130500D78EE0 /* Assets.xcassets */; };
 		C4485B9D29AA130500D78EE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4485B9B29AA130500D78EE0 /* LaunchScreen.storyboard */; };
+		C4485BA729AA13B100D78EE0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4485BA629AA13B100D78EE0 /* SettingsViewController.swift */; };
+		C44C579A29AA1A5D00C1A8EE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C579929AA1A5D00C1A8EE /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C4485B8D29AA130400D78EE0 /* ColorizedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorizedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4485B9029AA130400D78EE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4485B9229AA130400D78EE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C4485B9429AA130400D78EE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4485B9429AA130400D78EE0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C4485B9729AA130400D78EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4485B9929AA130500D78EE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4485B9C29AA130500D78EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4485B9E29AA130500D78EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4485BA629AA13B100D78EE0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C44C579929AA1A5D00C1A8EE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		C4485B8F29AA130400D78EE0 /* ColorizedApp */ = {
 			isa = PBXGroup;
 			children = (
-				C4485B9029AA130400D78EE0 /* AppDelegate.swift */,
-				C4485B9229AA130400D78EE0 /* SceneDelegate.swift */,
-				C4485B9429AA130400D78EE0 /* ViewController.swift */,
-				C4485B9629AA130400D78EE0 /* Main.storyboard */,
+				C44C579829AA1A5300C1A8EE /* Models */,
+				C44C579729AA143700C1A8EE /* Storyboards */,
+				C4485BA429AA137E00D78EE0 /* App */,
+				C4485BA529AA139D00D78EE0 /* ViewControllers */,
 				C4485B9929AA130500D78EE0 /* Assets.xcassets */,
-				C4485B9B29AA130500D78EE0 /* LaunchScreen.storyboard */,
-				C4485B9E29AA130500D78EE0 /* Info.plist */,
 			);
 			path = ColorizedApp;
+			sourceTree = "<group>";
+		};
+		C4485BA429AA137E00D78EE0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C4485B9029AA130400D78EE0 /* AppDelegate.swift */,
+				C4485B9229AA130400D78EE0 /* SceneDelegate.swift */,
+				C4485B9E29AA130500D78EE0 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C4485BA529AA139D00D78EE0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4485B9429AA130400D78EE0 /* MainViewController.swift */,
+				C4485BA629AA13B100D78EE0 /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C44C579729AA143700C1A8EE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C4485B9629AA130400D78EE0 /* Main.storyboard */,
+				C4485B9B29AA130500D78EE0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C44C579829AA1A5300C1A8EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C44C579929AA1A5D00C1A8EE /* Color.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4485B9529AA130400D78EE0 /* ViewController.swift in Sources */,
+				C4485B9529AA130400D78EE0 /* MainViewController.swift in Sources */,
 				C4485B9129AA130400D78EE0 /* AppDelegate.swift in Sources */,
 				C4485B9329AA130400D78EE0 /* SceneDelegate.swift in Sources */,
+				C44C579A29AA1A5D00C1A8EE /* Color.swift in Sources */,
+				C4485BA729AA13B100D78EE0 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7PV9N4T7V4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorizedApp/Info.plist;
+				INFOPLIST_FILE = ColorizedApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7PV9N4T7V4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorizedApp/Info.plist;
+				INFOPLIST_FILE = ColorizedApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
